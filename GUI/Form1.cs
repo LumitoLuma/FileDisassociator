@@ -72,7 +72,7 @@ namespace FDisassoc
             var lnkTime = File.GetLastWriteTime(Assembly.GetExecutingAssembly().Location).ToUniversalTime();
             MessageBox.Show("File Disassociator " + fvi.FileVersion.Replace(".0.0", "") + " coded by Lumito\n" +
                 "Compiled on " + lnkTime + "\n\n" +
-                "Project's website: https://github.com/LumitoLuma/FDisassoc\n" +
+                "Project's website: https://github.com/LumitoLuma/FileDisassociator\n" +
                 "Project licensed under the MIT license.\n\n" +
                 "Special thanks to this people, that helped me with this project:\n" +
                 " - ConsultUtah\n" +
