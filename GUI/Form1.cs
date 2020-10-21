@@ -85,6 +85,7 @@ namespace FDisassoc
             {
                 MessageBox.Show("And thanks a lot for using my software ;)", "About File Disassociator");
             }
+            ee = false;
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -155,6 +156,10 @@ namespace FDisassoc
             if (e.Control && e.Alt && e.Shift)
             {
                 ee = true;
+            }
+            else
+            {
+                ee = false;
             }
         }
 
