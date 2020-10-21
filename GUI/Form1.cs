@@ -15,6 +15,8 @@ namespace FDisassoc
 {
     public partial class Form1 : Form
     {
+        bool ee;
+
         public Form1()
         {
             InitializeComponent();
@@ -28,6 +30,7 @@ namespace FDisassoc
                 }
             }
             comboBox1.Items.RemoveAt(1); // Removes "." path from the list
+            ee = false;
         }
 
         void DelExt()
@@ -78,6 +81,10 @@ namespace FDisassoc
                 " - ConsultUtah\n" +
                 " - nihique\n\n" +
                 "Visit my website: https://www.lumito.net", "About File Disassociator");
+            if (ee)
+            {
+                MessageBox.Show("And thanks a lot for using my software ;)", "About File Disassociator");
+            }
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -141,6 +148,19 @@ namespace FDisassoc
         private void Button1_Click(object sender, EventArgs e)
         {
             RestartExplorer();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.Alt && e.Shift)
+            {
+                ee = true;
+            }
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            ee = false;
         }
     }
 }

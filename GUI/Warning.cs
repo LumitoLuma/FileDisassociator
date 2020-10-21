@@ -12,7 +12,7 @@ namespace FDisassoc
 {
     public partial class Warning : Form
     {
-        int seconds = 60;
+        short seconds = 60;
 
         public Warning()
         {

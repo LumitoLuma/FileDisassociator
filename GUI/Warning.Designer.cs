@@ -122,6 +122,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Warning";
+            this.Opacity = 0.95D;
             this.Text = "File Disassociator";
             this.Load += new System.EventHandler(this.Warning_Load);
             this.ResumeLayout(false);
