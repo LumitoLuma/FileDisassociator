@@ -43,8 +43,8 @@ namespace FDisassoc
                 u2Key.DeleteSubKey(k);
             }
             uKey.DeleteSubKey(ext);
-            RegistryKey cKey = Registry.ClassesRoot.OpenSubKey("", true);
-            RegistryKey c2Key = Registry.ClassesRoot.OpenSubKey(ext, true);
+            RegistryKey cKey = Registry.ClassesRoot.OpenSubKey(@"\", true);
+            RegistryKey c2Key = Registry.ClassesRoot.OpenSubKey(@"\" + ext, true);
             foreach (var k2 in c2Key.GetSubKeyNames())
             {
                 c2Key.DeleteSubKey(k2);
